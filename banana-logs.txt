@@ -1,0 +1,2 @@
+[my_logger] This is my first log!
+[my_logger] This is quiet... log...!
