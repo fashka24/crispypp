@@ -5,6 +5,7 @@ int main() {
     // "my_logger" -> "[my_logger] ..."
     crs::bananalogger my_logger("banana-logs.txt", "my_logger");
 
+    // clearing all logs
     my_logger.clearlogs();
 
     my_logger.log("This is my first log!");
