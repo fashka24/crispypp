@@ -1,6 +1,6 @@
-# Library Name
+# Crispy++
 
-A brief description of your library and its purpose. For example: "A multi-purpose C++ library for working with network protocols, file operations, and mathematical computations."
+A multi-purpose C++ library for working with network protocols, file operations, and mathematical computations.
 
 ## Table of Contents
 
@@ -19,8 +19,8 @@ A brief description of your library and its purpose. For example: "A multi-purpo
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your_username/your_repository.git
-cd your_repository
+git clone https://github.com/fashka24/crispypp.git
+cd crispypp
 ```
 2. You can compile library to one file:
 ```bash
