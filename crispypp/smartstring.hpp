@@ -108,6 +108,7 @@ namespace crs {
             return this;
         }
         std::string build() {
+            this->str_.pop_back();
             return this->str_;
         }
     private:
