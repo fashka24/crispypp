@@ -7,4 +7,5 @@ add_executable(crispypp main.cpp
         crispypp/smartfile.hpp
         crispypp/addexceptions.hpp
         crispypp/bananalogger.hpp
-        crispypp/all.hpp)
+        crispypp/all.hpp
+        crispypp/smartstring.hpp)

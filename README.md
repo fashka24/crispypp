@@ -32,7 +32,7 @@ cpp crispypp/all.hpp -o crispypp.hpp
 
 All examples you can see in folder example/
 
-### example/smartfile.hpp
+### example/smartfile.cpp
 ```c++
 #include <iostream>
 #include "../crispypp/smartfile.hpp"
@@ -53,7 +53,7 @@ int main() {
     << "Sizeof my_file: " << sizeof(my_file) << "\n";
 }
 ```
-### example/bananalogger.hpp
+### example/bananalogger.cpp
 ```c++
 #include <iostream>
 #include "../crispypp/bananalogger.hpp"
@@ -68,5 +68,22 @@ int main() {
     my_logger.log("This is my first log!");
     // quiet log NOT print text to stdout
     my_logger.quietlog("This is quiet... log...!");
+}
+```
+### example/smartstring.cpp
+```c++
+#include <iostream>
+#include "../crispypp/smartstring.hpp"
+
+int main() {
+    crs::smartstring my_str("This is my string!");
+
+    auto v = my_str.split(" ");
+
+
+    std::cout << crs::toString(v) << "\n";
+    std::cout << my_str + "2" << "\n";
+    std::cout << my_str * 3 << "\n";
+    std::cout << my_str << "\n";
 }
 ```
