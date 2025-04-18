@@ -8,5 +8,7 @@
 #include "addexceptions.hpp"
 #include "smartfile.hpp"
 #include "bananalogger.hpp"
+#include "smartstring.hpp"
+#include "ctypes.hpp"
 
 #endif //ALL_HPP

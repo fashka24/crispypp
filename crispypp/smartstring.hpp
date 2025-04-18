@@ -97,5 +97,22 @@ namespace crs {
 
         return result;
     }
+
+    class stringbuilder {
+    public:
+        explicit stringbuilder(): delimiter(' ') {}
+        explicit stringbuilder(char delimiter): delimiter(delimiter) {}
+
+        stringbuilder* concat(std::string s) {
+            this->str_ += s + delimiter;
+            return this;
+        }
+        std::string build() {
+            return this->str_;
+        }
+    private:
+        std::string str_;
+        char delimiter;
+    };
 }
 #endif //SMARTSTRING_HPP
