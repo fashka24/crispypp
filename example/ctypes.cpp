@@ -17,7 +17,7 @@ int main() {
     var1->var_name = "var1";
     var1->var_value = "123";
 
-    my_function->statements.push_back(var1);
+    my_function->add(var1);
 
     std::cout << my_function->build();
 

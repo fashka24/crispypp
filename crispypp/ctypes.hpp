@@ -124,6 +124,10 @@ public:
 
         return builder.build();
     }
+
+    void add(c_statement* stat) {
+        statements.push_back(stat);
+    }
 };
 
 } // namespace crs
