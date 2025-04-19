@@ -26,9 +26,10 @@ namespace crs {
         explicit smartfile(const std::string& path): path(path) {}
         void write(const std::string &_text) {
             this->de_file.open(this->path, std::ios_base::out);
+            clear();
 
             if (!this->de_file.is_open()) {
-                throw NotFoundFileException(this->path);
+                throw InitiliazationException(this->path);
             }
 
             this->de_file << _text;
@@ -38,7 +39,7 @@ namespace crs {
             this->de_file.open(this->path, std::ios_base::app);
 
             if (!this->de_file.is_open()) {
-                throw NotFoundFileException(this->path);
+                throw InitiliazationException(this->path);
             }
 
             this->de_file << _text;
@@ -54,7 +55,7 @@ namespace crs {
                     _buf << this->de_file.rdbuf();
                 }
                 else {
-                    throw NotFoundFileException(this->path);
+                    throw InitiliazationException(this->path);
                     return "";
                 }
                 _result = _buf.str();
@@ -71,7 +72,7 @@ namespace crs {
             std::fstream file(this->path, std::ios::in | std::ios::binary);
 
             if (!file.is_open()) {
-                throw NotFoundFileException(this->path);
+                throw InitiliazationException(this->path);
             }
 
             file.seekg(0, std::ios::end);

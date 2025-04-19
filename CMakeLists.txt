@@ -9,4 +9,6 @@ add_executable(crispypp main.cpp
         crispypp/bananalogger.hpp
         crispypp/all.hpp
         crispypp/smartstring.hpp
-        crispypp/ctypes.hpp)
+        crispypp/ctypes.hpp
+        crispypp/webserver.hpp
+        crispypp/htmlgen.hpp)
