@@ -11,4 +11,5 @@ add_executable(crispypp main.cpp
         crispypp/smartstring.hpp
         crispypp/ctypes.hpp
         crispypp/webserver.hpp
-        crispypp/htmlgen.hpp)
+        crispypp/htmlgen.hpp
+        crispypp/incodevm.hpp)
